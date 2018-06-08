@@ -14,6 +14,7 @@ public class AppJ8 {
 		System.out.println(processHere2("Ok, Proccesing...", 5, (str, i) -> str.substring(i)));
 		System.out.println(processHere2("Ok, Proccesing...", 5, String::substring));
 		
+		// Sino la pones como final en el segundo sysout no se verá está variable pues no está en su scope
 		String prefix = "Mr";
 		System.out.println(processHere(" Robert", prefix::concat));
 		
@@ -41,4 +42,5 @@ public class AppJ8 {
 		return manageString.apply(str);
 	}
 
+	
 }
